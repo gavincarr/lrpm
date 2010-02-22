@@ -17,7 +17,7 @@ lrpm is a simple rpm wrapper that logs successful rpm transactions to
 %setup
 
 %build
-pod2man %{name}.pod > %{name}.1
+pod2man %{name} > %{name}.1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -25,7 +25,6 @@ mkdir -p $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
-install %{name}_* $RPM_BUILD_ROOT%{_bindir}
 install -m0644 %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
