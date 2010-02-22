@@ -1,6 +1,6 @@
 Name:       lrpm
 Summary:    Log wrapper for rpm
-Version:    0.1
+Version:    0.1.1
 Release:    1%{org_tag}
 Group:      Applications/System
 License:    GPL
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %changelog
+
+* Mon Feb 22 2010 Gavin Carr <gavin@openfusion.com.au> 0.1.1-1
+- Fix buglet with timestamp format.
 
 * Mon Feb 22 2010 Gavin Carr <gavin@openfusion.com.au> 0.1-1
 - Initial spec file

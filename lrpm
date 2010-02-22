@@ -77,7 +77,7 @@ my $lf = IO::File->new( $logfile, 'a' )
 for my $rpm (@rpm) {
   $rpm = basename($rpm);
   $rpm =~ s/\.rpm$//;
-  $lf->printf("%s %s: %s\n", $t->strftime('%b %d %H:%M:%T'), $op, $rpm);
+  $lf->printf("%s %s: %s\n", $t->strftime('%b %d %T'), $op, $rpm);
 }
 
 __END__
