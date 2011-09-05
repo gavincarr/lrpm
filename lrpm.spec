@@ -1,7 +1,7 @@
 Name:       lrpm
 Summary:    Log wrapper for rpm
 Version:    0.1.2
-Release:    1%{org_tag}
+Release:    1%{org_tag}%{dist}
 Group:      Applications/System
 License:    GPL3
 Source0:    %{name}-%{version}.tar.gz
