@@ -1,9 +1,9 @@
 Name:       lrpm
 Summary:    Log wrapper for rpm
-Version:    0.1.1
+Version:    0.1.2
 Release:    1%{org_tag}
 Group:      Applications/System
-License:    GPL
+License:    GPL3
 Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-root
 BuildArch:  noarch
@@ -34,12 +34,15 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_bindir}/*
 %{_mandir}/man1/*
+%doc LICENCE README
 
 %changelog
+* Mon Sep 05 2011 Gavin Carr <gavin@openfusion.com.au> 0.1.2-1
+- Include LICENCE and README files, minor tweaks to docs.
 
 * Mon Feb 22 2010 Gavin Carr <gavin@openfusion.com.au> 0.1.1-1
 - Fix buglet with timestamp format.
 
 * Mon Feb 22 2010 Gavin Carr <gavin@openfusion.com.au> 0.1-1
-- Initial spec file
+- Initial spec file.
 

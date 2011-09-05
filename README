@@ -1,0 +1,7 @@
+lrpm is a simple logging wrapper for rpm, intended to allow rpm updates
+to be captured and logged in the same way as updates via yum.
+
+lrpm just passes all arguments straight through to rpm itself. If rpm
+returns success, and the transaction is not a query, lrpm logs the
+details to the /var/log/yum.log log file, in the standard yum format.
+
